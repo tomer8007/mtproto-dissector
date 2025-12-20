@@ -1,0 +1,1055 @@
+{
+    "constructors": [
+        {
+            "id": 1182381663,
+            "predicate": "accessPointRule",
+            "params": [
+                {
+                    "name": "phone_prefix_rules",
+                    "type": "string"
+                },
+                {
+                    "name": "dc_id",
+                    "type": "int"
+                },
+                {
+                    "name": "ips",
+                    "type": "vector<IpPort>"
+                }
+            ],
+            "type": "AccessPointRule"
+        },
+        {
+            "id": 2817521681,
+            "predicate": "bad_msg_notification",
+            "params": [
+                {
+                    "name": "bad_msg_id",
+                    "type": "long"
+                },
+                {
+                    "name": "bad_msg_seqno",
+                    "type": "int"
+                },
+                {
+                    "name": "error_code",
+                    "type": "int"
+                }
+            ],
+            "type": "BadMsgNotification"
+        },
+        {
+            "id": 3987424379,
+            "predicate": "bad_server_salt",
+            "params": [
+                {
+                    "name": "bad_msg_id",
+                    "type": "long"
+                },
+                {
+                    "name": "bad_msg_seqno",
+                    "type": "int"
+                },
+                {
+                    "name": "error_code",
+                    "type": "int"
+                },
+                {
+                    "name": "new_server_salt",
+                    "type": "long"
+                }
+            ],
+            "type": "BadMsgNotification"
+        },
+        {
+            "id": 1973679973,
+            "predicate": "bind_auth_key_inner",
+            "params": [
+                {
+                    "name": "nonce",
+                    "type": "long"
+                },
+                {
+                    "name": "temp_auth_key_id",
+                    "type": "long"
+                },
+                {
+                    "name": "perm_auth_key_id",
+                    "type": "long"
+                },
+                {
+                    "name": "temp_session_id",
+                    "type": "long"
+                },
+                {
+                    "name": "expires_at",
+                    "type": "int"
+                }
+            ],
+            "type": "BindAuthKeyInner"
+        },
+        {
+            "id": 1715713620,
+            "predicate": "client_DH_inner_data",
+            "params": [
+                {
+                    "name": "nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "server_nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "retry_id",
+                    "type": "long"
+                },
+                {
+                    "name": "g_b",
+                    "type": "string"
+                }
+            ],
+            "type": "Client_DH_Inner_Data"
+        },
+        {
+            "id": 3926956819,
+            "predicate": "destroy_auth_key_fail",
+            "params": [],
+            "type": "DestroyAuthKeyRes"
+        },
+        {
+            "id": 178201177,
+            "predicate": "destroy_auth_key_none",
+            "params": [],
+            "type": "DestroyAuthKeyRes"
+        },
+        {
+            "id": 4133544404,
+            "predicate": "destroy_auth_key_ok",
+            "params": [],
+            "type": "DestroyAuthKeyRes"
+        },
+        {
+            "id": 1658015945,
+            "predicate": "destroy_session_none",
+            "params": [
+                {
+                    "name": "session_id",
+                    "type": "long"
+                }
+            ],
+            "type": "DestroySessionRes"
+        },
+        {
+            "id": 3793765884,
+            "predicate": "destroy_session_ok",
+            "params": [
+                {
+                    "name": "session_id",
+                    "type": "long"
+                }
+            ],
+            "type": "DestroySessionRes"
+        },
+        {
+            "id": 2795351554,
+            "predicate": "dh_gen_fail",
+            "params": [
+                {
+                    "name": "nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "server_nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "new_nonce_hash3",
+                    "type": "int128"
+                }
+            ],
+            "type": "Set_client_DH_params_answer"
+        },
+        {
+            "id": 1003222836,
+            "predicate": "dh_gen_ok",
+            "params": [
+                {
+                    "name": "nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "server_nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "new_nonce_hash1",
+                    "type": "int128"
+                }
+            ],
+            "type": "Set_client_DH_params_answer"
+        },
+        {
+            "id": 1188831161,
+            "predicate": "dh_gen_retry",
+            "params": [
+                {
+                    "name": "nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "server_nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "new_nonce_hash2",
+                    "type": "int128"
+                }
+            ],
+            "type": "Set_client_DH_params_answer"
+        },
+        {
+            "id": null,
+            "predicate": "double",
+            "params": [
+                {
+                    "name": "?",
+                    "type": ""
+                }
+            ],
+            "type": "Double"
+        },
+        {
+            "id": 155834844,
+            "predicate": "future_salt",
+            "params": [
+                {
+                    "name": "valid_since",
+                    "type": "int"
+                },
+                {
+                    "name": "valid_until",
+                    "type": "int"
+                },
+                {
+                    "name": "salt",
+                    "type": "long"
+                }
+            ],
+            "type": "FutureSalt"
+        },
+        {
+            "id": 2924480661,
+            "predicate": "future_salts",
+            "params": [
+                {
+                    "name": "req_msg_id",
+                    "type": "long"
+                },
+                {
+                    "name": "now",
+                    "type": "int"
+                },
+                {
+                    "name": "salts",
+                    "type": "vector<future_salt>"
+                }
+            ],
+            "type": "FutureSalts"
+        },
+        {
+            "id": 1515793004,
+            "predicate": "help.configSimple",
+            "params": [
+                {
+                    "name": "date",
+                    "type": "int"
+                },
+                {
+                    "name": "expires",
+                    "type": "int"
+                },
+                {
+                    "name": "rules",
+                    "type": "vector<AccessPointRule>"
+                }
+            ],
+            "type": "help.ConfigSimple"
+        },
+        {
+            "id": 2459514271,
+            "predicate": "http_wait",
+            "params": [
+                {
+                    "name": "max_delay",
+                    "type": "int"
+                },
+                {
+                    "name": "wait_after",
+                    "type": "int"
+                },
+                {
+                    "name": "max_wait",
+                    "type": "int"
+                }
+            ],
+            "type": "HttpWait"
+        },
+        {
+            "id": null,
+            "predicate": "int",
+            "params": [
+                {
+                    "name": "?",
+                    "type": ""
+                }
+            ],
+            "type": "Int"
+        },
+        {
+            "id": null,
+            "predicate": "int128",
+            "params": [
+                {
+                    "name": "4*[",
+                    "type": ""
+                },
+                {
+                    "name": "int",
+                    "type": ""
+                },
+                {
+                    "name": "]",
+                    "type": ""
+                }
+            ],
+            "type": "Int128"
+        },
+        {
+            "id": null,
+            "predicate": "int256",
+            "params": [
+                {
+                    "name": "8*[",
+                    "type": ""
+                },
+                {
+                    "name": "int",
+                    "type": ""
+                },
+                {
+                    "name": "]",
+                    "type": ""
+                }
+            ],
+            "type": "Int256"
+        },
+        {
+            "id": 3560156531,
+            "predicate": "ipPort",
+            "params": [
+                {
+                    "name": "ipv4",
+                    "type": "int"
+                },
+                {
+                    "name": "port",
+                    "type": "int"
+                }
+            ],
+            "type": "IpPort"
+        },
+        {
+            "id": 932718150,
+            "predicate": "ipPortSecret",
+            "params": [
+                {
+                    "name": "ipv4",
+                    "type": "int"
+                },
+                {
+                    "name": "port",
+                    "type": "int"
+                },
+                {
+                    "name": "secret",
+                    "type": "bytes"
+                }
+            ],
+            "type": "IpPort"
+        },
+        {
+            "id": null,
+            "predicate": "long",
+            "params": [
+                {
+                    "name": "?",
+                    "type": ""
+                }
+            ],
+            "type": "Long"
+        },
+        {
+            "id": 661470918,
+            "predicate": "msg_detailed_info",
+            "params": [
+                {
+                    "name": "msg_id",
+                    "type": "long"
+                },
+                {
+                    "name": "answer_msg_id",
+                    "type": "long"
+                },
+                {
+                    "name": "bytes",
+                    "type": "int"
+                },
+                {
+                    "name": "status",
+                    "type": "int"
+                }
+            ],
+            "type": "MsgDetailedInfo"
+        },
+        {
+            "id": 2157819615,
+            "predicate": "msg_new_detailed_info",
+            "params": [
+                {
+                    "name": "answer_msg_id",
+                    "type": "long"
+                },
+                {
+                    "name": "bytes",
+                    "type": "int"
+                },
+                {
+                    "name": "status",
+                    "type": "int"
+                }
+            ],
+            "type": "MsgDetailedInfo"
+        },
+        {
+            "id": 2105940488,
+            "predicate": "msg_resend_req",
+            "params": [
+                {
+                    "name": "msg_ids",
+                    "type": "Vector<long>"
+                }
+            ],
+            "type": "MsgResendReq"
+        },
+        {
+            "id": 1658238041,
+            "predicate": "msgs_ack",
+            "params": [
+                {
+                    "name": "msg_ids",
+                    "type": "Vector<long>"
+                }
+            ],
+            "type": "MsgsAck"
+        },
+        {
+            "id": 2361446705,
+            "predicate": "msgs_all_info",
+            "params": [
+                {
+                    "name": "msg_ids",
+                    "type": "Vector<long>"
+                },
+                {
+                    "name": "info",
+                    "type": "string"
+                }
+            ],
+            "type": "MsgsAllInfo"
+        },
+        {
+            "id": 81704317,
+            "predicate": "msgs_state_info",
+            "params": [
+                {
+                    "name": "req_msg_id",
+                    "type": "long"
+                },
+                {
+                    "name": "info",
+                    "type": "string"
+                }
+            ],
+            "type": "MsgsStateInfo"
+        },
+        {
+            "id": 3664378706,
+            "predicate": "msgs_state_req",
+            "params": [
+                {
+                    "name": "msg_ids",
+                    "type": "Vector<long>"
+                }
+            ],
+            "type": "MsgsStateReq"
+        },
+        {
+            "id": 2663516424,
+            "predicate": "new_session_created",
+            "params": [
+                {
+                    "name": "first_msg_id",
+                    "type": "long"
+                },
+                {
+                    "name": "unique_id",
+                    "type": "long"
+                },
+                {
+                    "name": "server_salt",
+                    "type": "long"
+                }
+            ],
+            "type": "NewSession"
+        },
+        {
+            "id": 2211011308,
+            "predicate": "p_q_inner_data",
+            "params": [
+                {
+                    "name": "pq",
+                    "type": "string"
+                },
+                {
+                    "name": "p",
+                    "type": "string"
+                },
+                {
+                    "name": "q",
+                    "type": "string"
+                },
+                {
+                    "name": "nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "server_nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "new_nonce",
+                    "type": "int256"
+                }
+            ],
+            "type": "P_Q_inner_data"
+        },
+        {
+            "id": 2851430293,
+            "predicate": "p_q_inner_data_dc",
+            "params": [
+                {
+                    "name": "pq",
+                    "type": "string"
+                },
+                {
+                    "name": "p",
+                    "type": "string"
+                },
+                {
+                    "name": "q",
+                    "type": "string"
+                },
+                {
+                    "name": "nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "server_nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "new_nonce",
+                    "type": "int256"
+                },
+                {
+                    "name": "dc",
+                    "type": "int"
+                }
+            ],
+            "type": "P_Q_inner_data"
+        },
+        {
+            "id": 1013613780,
+            "predicate": "p_q_inner_data_temp",
+            "params": [
+                {
+                    "name": "pq",
+                    "type": "string"
+                },
+                {
+                    "name": "p",
+                    "type": "string"
+                },
+                {
+                    "name": "q",
+                    "type": "string"
+                },
+                {
+                    "name": "nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "server_nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "new_nonce",
+                    "type": "int256"
+                },
+                {
+                    "name": "expires_in",
+                    "type": "int"
+                }
+            ],
+            "type": "P_Q_inner_data"
+        },
+        {
+            "id": 1459478408,
+            "predicate": "p_q_inner_data_temp_dc",
+            "params": [
+                {
+                    "name": "pq",
+                    "type": "string"
+                },
+                {
+                    "name": "p",
+                    "type": "string"
+                },
+                {
+                    "name": "q",
+                    "type": "string"
+                },
+                {
+                    "name": "nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "server_nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "new_nonce",
+                    "type": "int256"
+                },
+                {
+                    "name": "dc",
+                    "type": "int"
+                },
+                {
+                    "name": "expires_in",
+                    "type": "int"
+                }
+            ],
+            "type": "P_Q_inner_data"
+        },
+        {
+            "id": 880243653,
+            "predicate": "pong",
+            "params": [
+                {
+                    "name": "msg_id",
+                    "type": "long"
+                },
+                {
+                    "name": "ping_id",
+                    "type": "long"
+                }
+            ],
+            "type": "Pong"
+        },
+        {
+            "id": 85337187,
+            "predicate": "resPQ",
+            "params": [
+                {
+                    "name": "nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "server_nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "pq",
+                    "type": "string"
+                },
+                {
+                    "name": "server_public_key_fingerprints",
+                    "type": "Vector<long>"
+                }
+            ],
+            "type": "ResPQ"
+        },
+        {
+            "id": 2755319991,
+            "predicate": "rpc_answer_dropped",
+            "params": [
+                {
+                    "name": "msg_id",
+                    "type": "long"
+                },
+                {
+                    "name": "seq_no",
+                    "type": "int"
+                },
+                {
+                    "name": "bytes",
+                    "type": "int"
+                }
+            ],
+            "type": "RpcDropAnswer"
+        },
+        {
+            "id": 3447252358,
+            "predicate": "rpc_answer_dropped_running",
+            "params": [],
+            "type": "RpcDropAnswer"
+        },
+        {
+            "id": 1579864942,
+            "predicate": "rpc_answer_unknown",
+            "params": [],
+            "type": "RpcDropAnswer"
+        },
+        {
+            "id": 558156313,
+            "predicate": "rpc_error",
+            "params": [
+                {
+                    "name": "error_code",
+                    "type": "int"
+                },
+                {
+                    "name": "error_message",
+                    "type": "string"
+                }
+            ],
+            "type": "RpcError"
+        },
+        {
+            "id": 3045658042,
+            "predicate": "server_DH_inner_data",
+            "params": [
+                {
+                    "name": "nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "server_nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "g",
+                    "type": "int"
+                },
+                {
+                    "name": "dh_prime",
+                    "type": "string"
+                },
+                {
+                    "name": "g_a",
+                    "type": "string"
+                },
+                {
+                    "name": "server_time",
+                    "type": "int"
+                }
+            ],
+            "type": "Server_DH_inner_data"
+        },
+        {
+            "id": 2043348061,
+            "predicate": "server_DH_params_fail",
+            "params": [
+                {
+                    "name": "nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "server_nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "new_nonce_hash",
+                    "type": "int128"
+                }
+            ],
+            "type": "Server_DH_Params"
+        },
+        {
+            "id": 3504867164,
+            "predicate": "server_DH_params_ok",
+            "params": [
+                {
+                    "name": "nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "server_nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "encrypted_answer",
+                    "type": "string"
+                }
+            ],
+            "type": "Server_DH_Params"
+        },
+        {
+            "id": null,
+            "predicate": "string",
+            "params": [
+                {
+                    "name": "?",
+                    "type": ""
+                }
+            ],
+            "type": "String"
+        },
+        {
+            "id": null,
+            "predicate": "tlsBlockDomain",
+            "params": [],
+            "type": "TlsBlock"
+        },
+        {
+            "id": null,
+            "predicate": "tlsBlockGrease",
+            "params": [
+                {
+                    "name": "seed",
+                    "type": "int"
+                }
+            ],
+            "type": "TlsBlock"
+        },
+        {
+            "id": null,
+            "predicate": "tlsBlockPermutation",
+            "params": [
+                {
+                    "name": "entries",
+                    "type": "Vector<Vector<TlsBlock>>"
+                }
+            ],
+            "type": "TlsBlock"
+        },
+        {
+            "id": null,
+            "predicate": "tlsBlockPublicKey",
+            "params": [],
+            "type": "TlsBlock"
+        },
+        {
+            "id": null,
+            "predicate": "tlsBlockRandom",
+            "params": [
+                {
+                    "name": "length",
+                    "type": "int"
+                }
+            ],
+            "type": "TlsBlock"
+        },
+        {
+            "id": null,
+            "predicate": "tlsBlockScope",
+            "params": [
+                {
+                    "name": "entries",
+                    "type": "Vector<TlsBlock>"
+                }
+            ],
+            "type": "TlsBlock"
+        },
+        {
+            "id": null,
+            "predicate": "tlsBlockString",
+            "params": [
+                {
+                    "name": "data",
+                    "type": "string"
+                }
+            ],
+            "type": "TlsBlock"
+        },
+        {
+            "id": null,
+            "predicate": "tlsBlockZero",
+            "params": [
+                {
+                    "name": "length",
+                    "type": "int"
+                }
+            ],
+            "type": "TlsBlock"
+        },
+        {
+            "id": null,
+            "predicate": "tlsClientHello",
+            "params": [
+                {
+                    "name": "blocks",
+                    "type": "vector<TlsBlock>"
+                }
+            ],
+            "type": "TlsClientHello"
+        },
+        {
+            "id": null,
+            "predicate": "vector",
+            "params": [],
+            "type": "Vector t"
+        }
+    ],
+    "methods": [
+        {
+            "id": 3510849888,
+            "method": "destroy_auth_key",
+            "params": [],
+            "type": "DestroyAuthKeyRes"
+        },
+        {
+            "id": 3880853798,
+            "method": "destroy_session",
+            "params": [
+                {
+                    "name": "session_id",
+                    "type": "long"
+                }
+            ],
+            "type": "DestroySessionRes"
+        },
+        {
+            "id": 3105996036,
+            "method": "get_future_salts",
+            "params": [
+                {
+                    "name": "num",
+                    "type": "int"
+                }
+            ],
+            "type": "FutureSalts"
+        },
+        {
+            "id": 2059302892,
+            "method": "ping",
+            "params": [
+                {
+                    "name": "ping_id",
+                    "type": "long"
+                }
+            ],
+            "type": "Pong"
+        },
+        {
+            "id": 4081220492,
+            "method": "ping_delay_disconnect",
+            "params": [
+                {
+                    "name": "ping_id",
+                    "type": "long"
+                },
+                {
+                    "name": "disconnect_delay",
+                    "type": "int"
+                }
+            ],
+            "type": "Pong"
+        },
+        {
+            "id": 3608339646,
+            "method": "req_DH_params",
+            "params": [
+                {
+                    "name": "nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "server_nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "p",
+                    "type": "string"
+                },
+                {
+                    "name": "q",
+                    "type": "string"
+                },
+                {
+                    "name": "public_key_fingerprint",
+                    "type": "long"
+                },
+                {
+                    "name": "encrypted_data",
+                    "type": "string"
+                }
+            ],
+            "type": "Server_DH_Params"
+        },
+        {
+            "id": 1615239032,
+            "method": "req_pq",
+            "params": [
+                {
+                    "name": "nonce",
+                    "type": "int128"
+                }
+            ],
+            "type": "ResPQ"
+        },
+        {
+            "id": 3195965169,
+            "method": "req_pq_multi",
+            "params": [
+                {
+                    "name": "nonce",
+                    "type": "int128"
+                }
+            ],
+            "type": "ResPQ"
+        },
+        {
+            "id": 1491380032,
+            "method": "rpc_drop_answer",
+            "params": [
+                {
+                    "name": "req_msg_id",
+                    "type": "long"
+                }
+            ],
+            "type": "RpcDropAnswer"
+        },
+        {
+            "id": 4110704415,
+            "method": "set_client_DH_params",
+            "params": [
+                {
+                    "name": "nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "server_nonce",
+                    "type": "int128"
+                },
+                {
+                    "name": "encrypted_data",
+                    "type": "string"
+                }
+            ],
+            "type": "Set_client_DH_params_answer"
+        }
+    ]
+}
