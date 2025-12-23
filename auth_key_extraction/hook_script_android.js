@@ -1,5 +1,5 @@
 //
-// Injected by frida_telegram_hook.py to the Telegram process.
+// Injected to the Telegram process on Android.
 //
 
 

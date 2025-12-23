@@ -1,7 +1,6 @@
-#!/usr/bin/env python3
 # Requires: frida (pip install frida)
 #
-# This script reads hook_script.js (same folder), waits for Telegram.exe,
+# This script reads the JS hooking script (same folder), waits for Telegram.exe,
 # attaches and injects the JS.
 
 import frida

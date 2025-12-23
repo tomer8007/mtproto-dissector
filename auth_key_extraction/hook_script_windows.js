@@ -1,5 +1,5 @@
 //
-// Injected by frida_telegram_hook.py to the Telegram process.
+// Injected to the Telegram process on Windows.
 //
 
 const MODULE_NAME = "Telegram.exe";   // hardcoded module to scan
